@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Fanadesh</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body class="sub_page">
+    <div class="top_container ">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            Fanadesh
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="learn.html"> Learn </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="article.html"> Article </a>
+                                </li>
+
+                                <!-- <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li> -->
+
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+    <!-- end header section -->
+
+    <div class="common_style">
+        <!-- Content section -->
+        <section class="learn_section">
+            <div class="container">
+                <!-- Content -->
+                <h1>BÀI 2: GIỚI THIỆU VỀ CODING</h1>
+                <h3>PHẦN 2 - VÒNG LẶP</h3>
+                <h3>Code vòng lặp</h3>
+                <div>Platform phải liên tục biến mất và xuất hiện lại, với một vài giây giữa mỗi lần thay đổi. Không thể
+                    viết vô số lệnh gọi hàm ,may mắn thay, với vòng lặp while , bạn không cần phải làm như vậy.</div>
+                <div>Vòng lặp while chạy code bên trong nó miễn là câu lệnh sau while vẫn đúng. Vòng lặp cụ thể này cần
+                    phải chạy mãi mãi, vì vậy câu lệnh chỉ cần để là true</div>
+                <ul>
+                    <li>Tạo một vòng lặp while true ở cuối tập lệnh của bạn</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            <div>local platform = script.Parent</div>
+                            <br>
+                            <div>local function disappear()</div>
+                            <div class="spaces">    platform.CanCollide = false</div>
+                            <div class="spaces">    platform.Transparency = 1</div>
+                            <div>end</div>
+                            <br>
+                            <div>local function appear()</div>
+                            <div class="spaces">    platform.CanCollide = true</div>
+                            <div class="spaces">    platform.Transparency = 0</div>
+                            <div>end</div>
+                            <br>
+                            <div>while true do</div>
+                            <br>
+                            <div>end</div>
+                        </code>
+                    </div>
+                </ul>
+                <h3>Chuyển đổi platform</h3>
+                <div>Trong vòng lặp while, bạn sẽ cần viết code để đợi vài giây giữa nền tảng biến mất và xuất hiện lại
+                </div>
+                <br>
+                <div>Hàm có sẵn wait có thể được sử dụng cho việc này. Trong ngoặc đơn, số giây để chờ là cần thiết: ví
+                    dụ wait(3)</div>
+                <div class="chu-y">⚠️ Dù bạn làm gì, đừng bao giờ tạo vòng lặp while true mà không bao gồm hàm wait, và
+                    đừng kiểm tra
+                    code của bạn trước khi bạn đưa vào! Nếu bạn không chờ đợi, trò chơi của bạn sẽ bị đóng băng vì
+                    Studio sẽ không bao giờ có cơ hội rời khỏi vòng lặp và làm bất cứ điều gì khác.</div>
+                <div>3 giây là điểm khởi đầu hợp lý cho khoảng thời gian giữa mỗi trạng thái platform</div>
+                <ol>
+                    <li>Trong vòng lặp while, hãy gọi hàm wait có 3 trong dấu ngoặc đơn</li>
+                    <li>Gọi hàm disappear</li>
+                    <li>Gọi lại hàm wait với 3 trong dấu ngoặc đơn</li>
+                    <li>Gọi hàm appear</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            <div>local platform = script.Parent</div>
+                            <br>
+                            <div>local function disappear()</div>
+                            <div class="spaces">    platform.CanCollide = false</div>
+                            <div class="spaces">    platform.Transparency = 1</div>
+                            <div>end</div>
+                            <br>
+                            <div>local function appear()</div>
+                            <div class="spaces">    platform.CanCollide = true</div>
+                            <div class="spaces">    platform.Transparency = 0</div>
+                            <div>end</div>
+                            <br>
+                            <div>while true do</div>
+                            <div class="spaces">    wait(3)</div>
+                            <div class="spaces">    disappear()</div>
+                            <div class="spaces">    wait(3)</div>
+                            <div class="spaces">    appear()</div>
+                            <div>end</div>
+                        </code>
+                    </div>
+                </ol>
+                <div>Code cho nền tảng đã hoàn tất! Kiểm tra code của bạn và bạn sẽ thấy rằng nền tảng biến mất sau ba
+                    giây và xuất hiện lại ba giây sau trong một vòng lặp</div>
+                <br>
+                <div>Bạn có thể nhân bản platform này để che phủ khoảng cách rộng hơn, nhưng bạn sẽ phải thay đổi thời
+                    gian chờ trong mỗi tập lệnh, nếu không, tất cả các platform sẽ biến mất cùng một lúc và người chơi
+                    sẽ không bao giờ có thể vượt qua</div>
+                <video></video>
+
+
+
+                <div class="button-section">
+                    <a href="z-bai2phan2.html" class="back-button">Trang trước</a>
+                    <a href="z-bai3phan1.html" class="back-button">Trang sau</a>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- end Content section -->
+
+    </div>
+
+    <!-- info section -->
+    <section class="info_section layout_padding-top">
+        <div class="info_logo-box">
+            <h2>
+                Fanadesh
+            </h2>
+        </div>
+        <div class="container layout_padding2">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>
+                        About Us
+                    </h5>
+                    <p>
+                        dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        Useful Link
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Video games
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Remote control
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                3d controller
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        Contact Us
+                    </h5>
+                    <p>
+                        dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e
+                    </p>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="subscribe_container">
+                        <h5>
+                            Newsletter
+                        </h5>
+                        <div class="form_container">
+                            <form action="">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="social_container">
+
+                <div class="social-box">
+                    <a href="">
+                        <img src="images/fb.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="images/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/linkedin.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2019 All Rights Reserved By
+            <a href="https://html.design/">Free Html Templates</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>

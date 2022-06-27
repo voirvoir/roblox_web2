@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Fanadesh</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body class="sub_page">
+    <div class="top_container ">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            Fanadesh
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="learn.html"> Learn </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="article.html"> Article </a>
+                                </li>
+
+                                <!-- <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li> -->
+
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+    <!-- end header section -->
+
+    <div class="common_style">
+        <!-- Content section -->
+        <section class="learn_section">
+            <div class="container">
+                <!-- Content -->
+                <h1>BÀI 3: DUNG NHAM CHẾT NGƯỜI</h1>
+                <h3>PHẦN 1: BẮT ĐẦU</h3>
+                <div>Trong phần Giới thiệu về coding , bạn đã học cách thực hiện các thay đổi trong trò chơi theo chu kỳ
+                    theo thời gian. Điều gì xảy ra nếu bạn muốn thực hiện các thay đổi dựa trên hành vi của người chơi
+                </div>
+                <br>
+                <div>Khóa học này sẽ chỉ cho bạn cách tạo ra một tầng dung nham chết chóc có thể giết người chơi khi họ
+                    bước lên đó</div>
+                <video></video>
+                <h3>Cách dựng</h3>
+                <div>Khóa học này sẽ chỉ cho bạn cách tạo ra một tầng dung nham chết chóc có thể giết người chơi khi họ
+                    bước lên đó</div>
+                <ol>
+                    <li>Chèn một part và di chuyển nó vào vị trí trong thế giới trò chơi của bạn và gọi nó là LavaFloor
+                    </li>
+                    <li>Thay đổi kích thước để nó bao phủ sàn của không gian bao quanh</li>
+                    <img>
+                    <li>Làm cho sàn nhà trông giống dung nham hơn bằng cách đặt vật liệu thành Neon và màu cam</li>
+                    <div>
+                        <img>
+                        <img>
+                    </div>
+                    <li>Chèn Script vào phần và đổi tên nó thành KillPlayer</li>
+                    <img>
+                    <li>Loại bỏ mã mặc định và tạo một biến cho dung nham</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            local lava = script.Parent
+                        </code>
+                    </div>
+                </ol>
+                <h3>Kết nối với một sự kiện</h3>
+                <div>Bạn sẽ cần sử dụng một sự kiện để phát hiện khi nào người chơi chạm vào dung nham. Mỗi part đều có
+                    một sự kiện Touched sẽ kích hoạt khi có vật gì đó chạm vào. Bạn có thể kết nối với sự kiện này để
+                    chạy một chức năng khi nó kích hoạt</div>
+                <ol>
+                    <li>Khai báo một hàm mới được gọi killPlayer</li>
+                    <li>Truy cập sự kiện Touched vào đối tượng dung nham bằng cách sử dụng dấu chấm, giống như thuộc
+                        tính: <code>lava.Touched</code></li>
+                    <li>Gọi hàm Connect trên sự kiện Touched, truyền hàm giết</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            <div>local lava = script.Parent</div>
+                            <br>
+                            <div>local function killPlayer()</div>
+                            <br>
+                            <div>end</div>
+                            <br>
+                            <div>lava.Touched:Connect(killPlayer)</div>
+                        </code>
+                    </div>
+                </ol>
+                <div>Bất kỳ mã nào bạn viết trong hàm killPlayer bây giờ sẽ chạy bất cứ khi nào có thứ gì đó chạm vào
+                    dung nham. Lưu ý rằng dấu hai chấm được sử dụng cho chức năng Connect, không phải dấu chấm</div>
+
+                <h3>Nhận được part được chạm</h3>
+                <div>Để giết người chơi, chức năng sẽ cần một đối tượng liên kết với người chơi đó. Sự kiện đã chạm của
+                    một part có thể cung cấp “part khác” đã chạm vào nó - nhưng chỉ khi bạn yêu cầu nó bằng cách đặt nó
+                    thành một tham số của hàm</div>
+                <br>
+                <div>Các tham số được xác định trong dấu ngoặc đơn trên dòng đầu tiên của một hàm</div>
+                <ul>
+                    <li>Tạo tham số otherPart cho hàm killPlayer</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            <div>local lava = script.Parent</div>
+                            <br>
+                            <div>local function killPlayer(otherPart)</div>
+                            <br>
+                            <div>end</div>
+                            <br>
+                            <div>lava.Touched:Connect(killPlayer)</div>
+                        </code>
+                    </div>
+                </ul>
+                <div>
+                    Khi hàm killPlayer được gọi, tham số otherPart sẽ đại diện cho phần đã chạm vào tầng dung nham và mã
+                    bạn sẽ viết trong hàm sẽ có thể sử dụng nó</div>
+
+
+                <div class="button-section">
+                    <a href="z-bai2phan3.html" class="back-button">Trang trước</a>
+                    <a href="z-bai3phan2.html" class="back-button">Trang sau</a>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- end Content section -->
+
+    </div>
+
+    <!-- info section -->
+    <section class="info_section layout_padding-top">
+        <div class="info_logo-box">
+            <h2>
+                Fanadesh
+            </h2>
+        </div>
+        <div class="container layout_padding2">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>
+                        About Us
+                    </h5>
+                    <p>
+                        dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        Useful Link
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Video games
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Remote control
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                3d controller
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        Contact Us
+                    </h5>
+                    <p>
+                        dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e
+                    </p>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="subscribe_container">
+                        <h5>
+                            Newsletter
+                        </h5>
+                        <div class="form_container">
+                            <form action="">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="social_container">
+
+                <div class="social-box">
+                    <a href="">
+                        <img src="images/fb.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="images/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/linkedin.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2019 All Rights Reserved By
+            <a href="https://html.design/">Free Html Templates</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>

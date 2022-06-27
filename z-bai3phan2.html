@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Fanadesh</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body class="sub_page">
+    <div class="top_container ">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            Fanadesh
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="learn.html"> Learn </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="article.html"> Article </a>
+                                </li>
+
+                                <!-- <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li> -->
+
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+        </header>
+
+    </div>
+    <!-- end header section -->
+
+    <div class="common_style">
+        <!-- Content section -->
+        <section class="learn_section">
+            <div class="container">
+                <!-- Content -->
+                <h1>BÀI 3: DUNG NHAM CHẾT NGƯỜI</h1>
+                <h3>PHẦN 1: TIÊU DIỆT NGƯỜI CHƠI</h3>
+                <h3>Nhân vật và Humanoid</h3>
+                <div>Khi người chơi chạm vào dung nham, Roblox thực sự phát hiện bộ phận cơ thể cụ thể của người chơi đã
+                    chạm vào nó, chẳng hạn như chân trái hoặc chân phải. Phần này nằm trong mô hình Nhân vật của người
+                    chơi</div>
+                <div class="eg">
+                    <div class="head-eg">
+                        Mô hình nhân vật
+                    </div>
+                    <div class="body-eg">
+                        <div>Mô hình Nhân vật chứa tất cả các đối tượng tạo nên hình đại diện của người chơi trong trò
+                            chơi, bao gồm</div>
+                        <ul>
+                            <li>Các bộ phận cơ thể riêng lẻ của người chơi như đầu, tay chân và thân</li>
+                            <li>Bất kỳ quần áo và phụ kiện nào mà người chơi mặc</li>
+                            <li>Một Humanoid là đối tượng đặc biệt chứa nhiều thuộc tính liên quan đến người chơi, bao
+                                gồm cả máu của người chơi</li>
+                            <li>HumanoidRootPart điều khiển chuyển động của người chơi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>Như đã lưu ý ở trên, bất kỳ bộ phận cơ thể nào chạm vào dung nham đều là một phần của Mô hình nhân
+                    vật, vì vậy bạn có thể tham chiếu đến nhân vật đó với otherPart.Parent</div>
+                <ul>
+                    <li>Tạo một biến để lưu trữ phần parent của part đã chạm vào tầng dung nham</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            <div>local lava = script.Parent</div>
+                            <br>
+                            <div>local function killPlayer(otherPart)</div>
+                            <div class="spaces">    local partParent = otherPart.Parent</div>
+                            <div>end</div>
+                            <br>
+                            <div>lava.Touched:Connect(killPlayer)</div>
+                        </code>
+                    </div>
+                </ul>
+                <div>Từ mô hình nhân vật, bạn sẽ cần lấy vật thể Hình người để tiêu diệt người chơi. Điều này có thể
+                    được thực hiện với hàm FindFirstChild, chỉ cần chuyển cho nó tên của thứ bạn đang tìm kiếm và nó sẽ
+                    cung cấp đứa trẻ phù hợp đầu tiên mà nó tìm thấy trong đối tượng đó</div>
+                <ul>
+                    <li>Gọi FindFirstChild với "Humanoid" là biến con cần tìm và lưu trữ kết quả trong một biến mới được
+                        gọi humanoid</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            <div>local lava = script.Parent</div>
+                            <br>
+                            <div>local function killPlayer(otherPart)</div>
+                            <div class="spaces">    local partParent = otherPart.Parent</div>
+                            <div class="spaces">    local humanoid = partParent:FindFirstChild("Humanoid")</div>
+                            <div>end</div>
+                            <br>
+                            <div>lava.Touched:Connect(killPlayer)</div>
+                        </code>
+                    </div>
+                </ul>
+                <h3>Kiểm tra Humanoid</h3>
+                <div>Bạn có thể dễ dàng kiểm tra xem Hình người có được tìm thấy hay không bằng cách sử dụng câu lệnh if
+                    . Code trong câu lệnh if sẽ chỉ chạy nếu điều kiện được xác định trong dòng đầu tiên là đúng</div>
+                <ul>
+                    <li>Tạo câu lệnh if với humanoid làm điều kiện</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            <div>local lava = script.Parent</div>
+                            <br>
+                            <div>local function killPlayer(otherPart)</div>
+                            <div class="spaces">    local partParent = otherPart.Parent</div>
+                            <div class="spaces">    local humanoid = partParent:FindFirstChild("Humanoid")</div>
+                            <div class="spaces">    if humanoid then</div>
+                            <br>
+                            <div class="spaces">    end</div>
+                            <div>end</div>
+                            <br>
+                            <div>lava.Touched:Connect(killPlayer)</div>
+                        </code>
+                    </div>
+                </ul>
+                <div>Bây giờ Humanoid đã được kiểm tra, các thuộc tính của nó có thể được thay đổi. Nếu bạn đặt thuộc
+                    tính
+                    Health của nó thành 0 , Nhân vật liên quan sẽ chết</div>
+                <ul>
+                    <li>Trong phần nội dung của câu lệnh if, hãy đặt Health của humanoid thành 0</li>
+                    <div class="boc-code">
+                        <code class="codes">
+                            <div>local lava = script.Parent</div>
+                            <br>
+                            <div>local function killPlayer(otherPart)</div>
+                            <div class="spaces">    local partParent = otherPart.Parent</div>
+                            <div class="spaces">    local humanoid = partParent:FindFirstChild("Humanoid")</div>
+                            <div class="spaces">    if humanoid then</div>
+                            <div class="spaces">        humanoid.Health = 0</div>
+                            <div class="spaces">    end</div>
+                            <div>end</div>
+                            <br>
+                            <div>lava.Touched:Connect(killPlayer)</div>
+                        </code>
+                    </div>
+                </ul>
+                <div>Với điều đó, sàn dung nham của bạn đã hoàn thành! Kiểm tra trò chơi của bạn và bạn sẽ thấy rằng
+                    dung
+                    nham chết người của bạn đã tiêu diệt thành công người chơi khi tiếp xúc. Hãy thử sử dụng dung nham
+                    của
+                    bạn như một thử thách bổ sung trong một obby hoặc làm ranh giới cho thế giới trò chơi</div>
+
+
+                <div class="button-section">
+                    <a href="z-bai3phan1.html" class="back-button">Trang trước</a>
+                    <a href="index.html" class="back-button">Trang chủ</a>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- end Content section -->
+
+    </div>
+
+    <!-- info section -->
+    <section class="info_section layout_padding-top">
+        <div class="info_logo-box">
+            <h2>
+                Fanadesh
+            </h2>
+        </div>
+        <div class="container layout_padding2">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>
+                        About Us
+                    </h5>
+                    <p>
+                        dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        Useful Link
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Video games
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Remote control
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                3d controller
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>
+                        Contact Us
+                    </h5>
+                    <p>
+                        dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e
+                    </p>
+                </div>
+                <div class="col-md-3">
+
+                    <div class="subscribe_container">
+                        <h5>
+                            Newsletter
+                        </h5>
+                        <div class="form_container">
+                            <form action="">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="social_container">
+
+                <div class="social-box">
+                    <a href="">
+                        <img src="images/fb.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="images/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/linkedin.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2019 All Rights Reserved By
+            <a href="https://html.design/">Free Html Templates</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+</body>
+
+</html>
