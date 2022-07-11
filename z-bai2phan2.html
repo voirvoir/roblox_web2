@@ -12,7 +12,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Fanadesh</title>
+    <title>Game Study</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -43,7 +43,7 @@
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
                     <a class="navbar-brand" href="index.html">
                         <span>
-                            Fanadesh
+                            Game Study
                         </span>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -95,8 +95,10 @@
                 <div>Đã đến lúc làm cho nền tảng biến mất. Tốt nhất nên nhóm code lại để đạt được một hành động cụ thể
                     vào một hàm . Hàm là một khối code được đặt tên giúp bạn tổ chức code của mình và sử dụng nó ở nhiều
                     nơi mà không cần viết lại</div>
+                <br>
                 <ul>
                     <li>Tạo một hàm trong script và gọi nó disappear</li>
+                    <br>
                     <div class="boc-code">
                         <code class="codes">
                             <div>local platform = script.Parent</div>
@@ -106,6 +108,7 @@
                             <div>end</div>
                         </code>
                     </div>
+                    <br>
                     <div>Dòng thứ 2 khai báo hàm - nó cho biết sự bắt đầu của hàm và đặt tên cho nó disappear. Code của
                         một hàm nằm giữa dòng đầu tiên và "end"</div>
                     <br>
@@ -120,14 +123,27 @@
                 <br>
                 <div>Một part có thể được ẩn đi bằng cách thay đổi thuộc tính Transparency . Độ trong suốt có thể là
                     một giá trị từ 0 đến 1, trong đó 1 là hoàn toàn trong suốt và do đó vô hình</div>
-                <video></video>
+                <video width="900" height="auto" controls muted>
+                    <source src="images/b5v1.mp4" type="video/mp4">
+                    ??????
+                </video>
+                <br>
+                <br>
                 <div>Thuộc tính CanCollide xác định xem các phần khác (và người chơi) có thể đi qua part đó hay
                     không. Nếu bạn đặt nó thành false , người chơi sẽ rơi qua platform</div>
-                <video></video>
+                <br>
+                <video width="900" height="auto" controls muted>
+                    <source src="images/b5v2.mp4" type="video/mp4">
+                    ??????
+                </video>
+                <br>
+                <br>
                 <div>Giống như script.Parent, các thuộc tính được truy cập bằng cách sử dụng một dấu chấm . Giá trị
                     được chỉ định bằng cách sử dụng dấu bằng</div>
+                <br>
                 <ol>
                     <li>Trong hàm disappear này, hãy đặt thuộc tính CanCollide của nền tảng thành false</li>
+                    <br>
                     <li>Trên dòng tiếp theo, hãy đặt thuộc tính Transparency thành 1</li>
                 </ol>
                 <ul>
@@ -146,8 +162,10 @@
                 <div>Đã đến lúc chạy code trong hàm để kiểm tra xem nó có hoạt động không. Khi bạn đã khai báo một
                     hàm, bạn có thể chạy nó bằng cách viết tên của nó với dấu ngoặc đơn bên cạnh nó. Ví dụ,
                     disappear() sẽ chạy hàm disappear. Điều này được gọi là gọi hàm</div>
+                <br>
                 <ol>
                     <li>Gọi hàm disappear ở cuối tập lệnh</li>
+                    <br>
                     <div class="boc-code">
                         <code class="codes">
                                 <div>local platform = script.Parent</div>
@@ -160,17 +178,22 @@
                                 <div>disappear()</div>
                             </code>
                     </div>
+                    <br>
                     <li>Kiểm tra mã bằng cách nhấn nút Play . Nếu code của bạn hoạt động, nền tảng đáng lẽ đã biến
                         mất vào thời điểm người chơi xuất hiện trong trò chơi</li>
                 </ol>
                 <h3>Hàm xuất hiện</h3>
                 <div>Bạn có thể dễ dàng làm cho nền tảng xuất hiện lại bằng cách viết một hàm hoàn toàn ngược lại
                     với hàm disappear</div>
+                <br>
                 <ol>
                     <li>Xóa dòng disappear() khỏi tập lệnh</li>
+                    <br>
                     <li>Khai báo một hàm mới được gọi appear</li>
+                    <br>
                     <li>Trong phần thân hàm, hãy đặt thuộc tính CanCollide thành true và thuộc tính Transparency
                         thành 0</li>
+                    <br>
                     <div class="boc-code">
                         <code class="codes">
                             <div>local platform = script.Parent</div>
@@ -203,7 +226,7 @@
     <section class="info_section layout_padding-top">
         <div class="info_logo-box">
             <h2>
-                Fanadesh
+                Game Study
             </h2>
         </div>
         <div class="container layout_padding2">

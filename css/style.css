@@ -249,7 +249,7 @@ a:focus {
 
 /* about section */
 .about_section {
-  text-align: right;
+  text-align: left;
 }
 
 .about_section a {
@@ -272,7 +272,7 @@ a:focus {
 /* why section */
 
 .why_section {
-  text-align: right;
+  text-align: left;
 }
 
 .why_section a {
@@ -573,6 +573,35 @@ a:focus {
   align-items: flex-end;
 }
 
+.image_01 {
+  flex-basis: 30%;
+  background-image: url('../images/b1a0.jpg');
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.image_02 {
+  flex-basis: 30%;
+  background-image: url('../images/b2a0.png');
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image_03 {
+  flex-basis: 30%;
+  background-image: url('../images/b7a3.jpg');
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .text_right {
   flex-basis: 70%;
   padding: 40px;
@@ -645,4 +674,8 @@ a:focus {
  
 .body-eg{
   padding: 10px
+}
+
+.learn_right{
+  font-family: quicksand;
 }

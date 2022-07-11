@@ -12,7 +12,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Fanadesh</title>
+    <title>Game Study</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -43,7 +43,7 @@
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
                     <a class="navbar-brand" href="index.html">
                         <span>
-                            Fanadesh
+                            Game Study
                         </span>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -97,22 +97,28 @@
                 <br>
                 <div>Khóa học này sẽ chỉ cho bạn cách tạo ra một tầng dung nham chết chóc có thể giết người chơi khi họ
                     bước lên đó</div>
-                <video></video>
+                <br>
+                <video width="1000" height="auto" controls muted>
+                    <source src="images/b7v1.mp4" type="video/mp4">
+                    ??????
+                </video>
+                <br>
+                <br>
                 <h3>Cách dựng</h3>
                 <div>Khóa học này sẽ chỉ cho bạn cách tạo ra một tầng dung nham chết chóc có thể giết người chơi khi họ
                     bước lên đó</div>
+                <br>
                 <ol>
                     <li>Chèn một part và di chuyển nó vào vị trí trong thế giới trò chơi của bạn và gọi nó là LavaFloor
                     </li>
+                    <br>
                     <li>Thay đổi kích thước để nó bao phủ sàn của không gian bao quanh</li>
-                    <img>
+                    <img src="images/b7a2.jpg" alt="b2a5" class="m-ver" style="width:1000px">
                     <li>Làm cho sàn nhà trông giống dung nham hơn bằng cách đặt vật liệu thành Neon và màu cam</li>
-                    <div>
-                        <img>
-                        <img>
-                    </div>
+                    <img src="images/b7a3.jpg" alt="b2a5" class="m-ver" style="width:450px">
+                    <img src="images/b7a4.jpg" alt="b2a5" class="m-ver" style="width:574px">
                     <li>Chèn Script vào phần và đổi tên nó thành KillPlayer</li>
-                    <img>
+                    <img src="images/b7a5.jpg" alt="b2a5" class="m-ver" style="width:300px">
                     <li>Loại bỏ mã mặc định và tạo một biến cho dung nham</li>
                     <div class="boc-code">
                         <code class="codes">
@@ -124,10 +130,13 @@
                 <div>Bạn sẽ cần sử dụng một sự kiện để phát hiện khi nào người chơi chạm vào dung nham. Mỗi part đều có
                     một sự kiện Touched sẽ kích hoạt khi có vật gì đó chạm vào. Bạn có thể kết nối với sự kiện này để
                     chạy một chức năng khi nó kích hoạt</div>
+                <br>
                 <ol>
                     <li>Khai báo một hàm mới được gọi killPlayer</li>
+                    <br>
                     <li>Truy cập sự kiện Touched vào đối tượng dung nham bằng cách sử dụng dấu chấm, giống như thuộc
                         tính: <code>lava.Touched</code></li>
+                    <br>
                     <li>Gọi hàm Connect trên sự kiện Touched, truyền hàm giết</li>
                     <div class="boc-code">
                         <code class="codes">
@@ -143,7 +152,7 @@
                 </ol>
                 <div>Bất kỳ mã nào bạn viết trong hàm killPlayer bây giờ sẽ chạy bất cứ khi nào có thứ gì đó chạm vào
                     dung nham. Lưu ý rằng dấu hai chấm được sử dụng cho chức năng Connect, không phải dấu chấm</div>
-
+                <br>
                 <h3>Nhận được part được chạm</h3>
                 <div>Để giết người chơi, chức năng sẽ cần một đối tượng liên kết với người chơi đó. Sự kiện đã chạm của
                     một part có thể cung cấp “part khác” đã chạm vào nó - nhưng chỉ khi bạn yêu cầu nó bằng cách đặt nó
@@ -185,7 +194,7 @@
     <section class="info_section layout_padding-top">
         <div class="info_logo-box">
             <h2>
-                Fanadesh
+                Game Study
             </h2>
         </div>
         <div class="container layout_padding2">

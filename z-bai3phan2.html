@@ -12,7 +12,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Fanadesh</title>
+    <title>Game Study</title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -43,7 +43,7 @@
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
                     <a class="navbar-brand" href="index.html">
                         <span>
-                            Fanadesh
+                            Game Study
                         </span>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -95,6 +95,7 @@
                 <div>Khi người chơi chạm vào dung nham, Roblox thực sự phát hiện bộ phận cơ thể cụ thể của người chơi đã
                     chạm vào nó, chẳng hạn như chân trái hoặc chân phải. Phần này nằm trong mô hình Nhân vật của người
                     chơi</div>
+                <br>
                 <div class="eg">
                     <div class="head-eg">
                         Mô hình nhân vật
@@ -111,8 +112,10 @@
                         </ul>
                     </div>
                 </div>
+                <br>
                 <div>Như đã lưu ý ở trên, bất kỳ bộ phận cơ thể nào chạm vào dung nham đều là một phần của Mô hình nhân
                     vật, vì vậy bạn có thể tham chiếu đến nhân vật đó với otherPart.Parent</div>
+                <br>
                 <ul>
                     <li>Tạo một biến để lưu trữ phần parent của part đã chạm vào tầng dung nham</li>
                     <div class="boc-code">
@@ -130,6 +133,7 @@
                 <div>Từ mô hình nhân vật, bạn sẽ cần lấy vật thể Hình người để tiêu diệt người chơi. Điều này có thể
                     được thực hiện với hàm FindFirstChild, chỉ cần chuyển cho nó tên của thứ bạn đang tìm kiếm và nó sẽ
                     cung cấp đứa trẻ phù hợp đầu tiên mà nó tìm thấy trong đối tượng đó</div>
+                <br>
                 <ul>
                     <li>Gọi FindFirstChild với "Humanoid" là biến con cần tìm và lưu trữ kết quả trong một biến mới được
                         gọi humanoid</li>
@@ -149,6 +153,7 @@
                 <h3>Kiểm tra Humanoid</h3>
                 <div>Bạn có thể dễ dàng kiểm tra xem Hình người có được tìm thấy hay không bằng cách sử dụng câu lệnh if
                     . Code trong câu lệnh if sẽ chỉ chạy nếu điều kiện được xác định trong dòng đầu tiên là đúng</div>
+                <br>
                 <ul>
                     <li>Tạo câu lệnh if với humanoid làm điều kiện</li>
                     <div class="boc-code">
@@ -169,7 +174,8 @@
                 </ul>
                 <div>Bây giờ Humanoid đã được kiểm tra, các thuộc tính của nó có thể được thay đổi. Nếu bạn đặt thuộc
                     tính
-                    Health của nó thành 0 , Nhân vật liên quan sẽ chết</div>
+                    Health của nó thành 0, Nhân vật liên quan sẽ chết</div>
+                <br>
                 <ul>
                     <li>Trong phần nội dung của câu lệnh if, hãy đặt Health của humanoid thành 0</li>
                     <div class="boc-code">
@@ -211,7 +217,7 @@
     <section class="info_section layout_padding-top">
         <div class="info_logo-box">
             <h2>
-                Fanadesh
+                Game Study
             </h2>
         </div>
         <div class="container layout_padding2">
